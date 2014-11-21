@@ -1,0 +1,6 @@
+language: c
+install:
+- sudo apt-get install python-dev gettext bin86 bcc iasl uuid-dev libncurses5-dev pkg-config libglib2.0-dev wget libaio-dev libssl-dev libyajl-dev make libc6-dev-i386 libpixman-1-dev texinfo
+script:
+- ./configure --enable-stubdom --disable-docs
+- ./.travis.py
