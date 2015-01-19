@@ -79,6 +79,7 @@ static void get_cmdline(void)
                 memcpy(start_info.cmd_line, bootargs, len);
             } else {
                 printk("bootargs length %d longer than maximum %d\n", len, MAX_GUEST_CMDLINE);
+                BUG();
             }
         }
     }
